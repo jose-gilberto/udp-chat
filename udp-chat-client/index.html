@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Client</title>
+    <link rel="stylesheet" href="./app/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./app/assets/css/main.css">
+    <link rel="stylesheet" href="./app/assets/css/all.css">
+    <link rel="stylesheet" href="./app/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./app/assets/css/brands.css">
+  </head>
+  <body>
+    <div class="app">
+      <h4 class="title">Chat</h4>
+      <div class="container">
+        <div id="message-box"></div>
+        <div class="row">
+            <div class="input-group">
+              <textarea class="form-control" aria-label="send" id="text-camp"></textarea>
+              <div class="input-group-append">
+                <button class="btn btn-dark" onclick="sendMessage()"><i class="fas fa-comment"></i></button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+    <script src="./app/assets/js/jquery.js"></script>
+    <script src="./app/assets/js/popper.min.js"></script>
+    <script src="./app/assets/js/bootstrap.js"></script>
+    <script src="./app/assets/js/all.js"></script>
+    <script src="./app/assets/js/brands.js"></script>
+    <script src="./app/assets/js/fontawesome.js"></script>
+    <script type="text/javascript" src="./app/assets/js/main.js"></script>
+  </body>
+</html>

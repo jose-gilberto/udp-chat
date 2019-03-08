@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Server</title>
+
+  <link rel="stylesheet" href="./app/assets/css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="./app/assets/css/main.css">
+  <link rel="stylesheet" href="./app/assets/css/all.css">
+  <link rel="stylesheet" href="./app/assets/css/fontawesome.css">
+  <link rel="stylesheet" href="./app/assets/css/brands.css">
+  <script type="text/javascript">
+    let op = 1;
+  </script>
+</head>
+
+<body>
+  <div class="app">
+    <h4 class="title-dashboard"> <i class="fas fa-server"></i> Server Dashboard</h4>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Server Status</h5>
+              <p class="card-text">
+                <i id="status-server-indicator" class="fas fa-circle"></i> <span id="status-server">Offline</span>
+              </p>
+              <p class="card-text">
+                <i class="fas fa-users"></i> Conected Users: 0
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Manager Server</h5>
+              <button id="btn-server" class="btn btn-dark btn-default" onclick="startServer()">Start</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-messages">
+            <div class="card-body">
+              <h5 class="card-title">Server Messages</h5>
+              <div id="messageBox" class="messages">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+
+  <script src="./app/assets/js/jquery.js"></script>
+  <script src="./app/assets/js/popper.min.js"></script>
+  <script src="./app/assets/js/bootstrap.js"></script>
+  <script src="./app/assets/js/all.js"></script>
+  <script src="./app/assets/js/brands.js"></script>
+  <script src="./app/assets/js/fontawesome.js"></script>
+  <script src="./app/server.js"></script>
+</body>
+
+</html>
